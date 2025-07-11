@@ -9,12 +9,15 @@ const no3 = document.querySelector('#no3');
 const no2 = document.querySelector('#no2');
 const no1 = document.querySelector('#no1');
 const no0 = document.querySelector('#no0');
+const clearBtn = document.querySelector('#clearBtn');
+const delBtn = document.querySelector('#delBtn');
+
 const additionOperator = document.querySelector('#additionOperator');
 const minusOperator = document.querySelector('#minusOperator');
 const multiplicationOperator = document.querySelector(' #multiplicationOperator');
 const divisionOperator = document.querySelector('#divisionOperator');
 const decimalOperator = document.querySelector('#decimalOperator');
-const equalOperator = document.querySelector('#equalOperator')
+const equalOperator = document.querySelector('#equalOperator');
 
 let calc = "";
 
@@ -97,3 +100,4 @@ equalOperator.addEventListener('click', function(){
   calc = eval(calc);
   result.textContent = calc; 
 });
+
