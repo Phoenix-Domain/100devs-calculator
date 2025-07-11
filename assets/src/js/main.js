@@ -101,3 +101,15 @@ equalOperator.addEventListener('click', function(){
   result.textContent = calc; 
 });
 
+clearBtn.addEventListener('click', function(){
+  calc = 0;
+  result.textContent = "";
+});
+
+delBtn.addEventListener('click', function(){
+  calc = calc.slice(0,-1);
+  result.textContent = calc;
+})
+
+
+
