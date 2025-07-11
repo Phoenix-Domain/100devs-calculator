@@ -11,17 +11,89 @@ const no1 = document.querySelector('#no1');
 const no0 = document.querySelector('#no0');
 const additionOperator = document.querySelector('#additionOperator');
 const minusOperator = document.querySelector('#minusOperator');
-const multiplicationOperator = document.querySelector(' multiplicationOperator');
+const multiplicationOperator = document.querySelector(' #multiplicationOperator');
 const divisionOperator = document.querySelector('#divisionOperator');
 const decimalOperator = document.querySelector('#decimalOperator');
+const equalOperator = document.querySelector('#equalOperator')
+
+let calc = "";
+
+no9.addEventListener('click', function(){
+  calc = calc + "9";
+  result.textContent = calc; 
+});
+
+no8.addEventListener('click', function(){
+  calc = calc + "8";
+  result.textContent = calc; 
+});
 
 no7.addEventListener('click', function(){
-  result.textContent = "7"; 
+  calc = calc + "7";
+  result.textContent = calc; 
 });
-//User clicks button
 
-//Value gets updated to the DOM
+no6.addEventListener('click', function(){
+  calc = calc + "6";
+  result.textContent = calc; 
+});
 
-//Evaluates the calculation
+no5.addEventListener('click', function(){
+  calc = calc + "5";
+  result.textContent = calc; 
+});
 
-//Displays the result
+no4.addEventListener('click', function(){
+  calc = calc + "4";
+  result.textContent = calc; 
+});
+
+no3.addEventListener('click', function(){
+  calc = calc + "3";
+  result.textContent = calc; 
+});
+
+no2.addEventListener('click', function(){
+  calc = calc + "2";
+  result.textContent = calc; 
+});
+
+no1.addEventListener('click', function(){
+  calc = calc + "1";
+  result.textContent = calc; 
+});
+
+no0.addEventListener('click', function(){
+  calc = calc + "0";
+  result.textContent = calc; 
+});
+
+additionOperator.addEventListener('click', function(){
+  calc = calc + "+";
+  result.textContent = calc; 
+});
+
+minusOperator.addEventListener('click', function(){
+  calc = calc + "-";
+  result.textContent = calc; 
+});
+
+divisionOperator.addEventListener('click', function(){
+  calc = calc + "/";
+  result.textContent = calc; 
+});
+
+multiplicationOperator.addEventListener('click', function(){
+  calc = calc + "*";
+  result.textContent = calc; 
+});
+
+decimalOperator.addEventListener('click', function(){
+  calc = calc + ".";
+  result.textContent = calc; 
+});
+
+equalOperator.addEventListener('click', function(){
+  calc = eval(calc);
+  result.textContent = calc; 
+});
