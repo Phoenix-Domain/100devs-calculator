@@ -11,10 +11,14 @@ main{
 }
 
 .result{
-  width:100%;
   background-color: whitesmoke;
-  height:4rem;
+  padding:0.8rem;
   margin:1rem auto;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  font-size:1.2rem;
 }
 
 button{
@@ -25,7 +29,9 @@ button{
   margin: 0 0.2rem;
   font-weight: bold;
 }
-
+button:active{
+  background-color: gray;
+}
 p{
   display:flex;
   justify-content: space-around;
