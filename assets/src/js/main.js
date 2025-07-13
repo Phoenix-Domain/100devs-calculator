@@ -23,6 +23,11 @@ primaryBtns.forEach(x => {
   })
 })
 
+function displayBtnContent(x){
+  calc = calc + "x";
+  result.textContent = calc;
+}
+
 const additionOperator = document.querySelector('#additionOperator');
 const minusOperator = document.querySelector('#minusOperator');
 const multiplicationOperator = document.querySelector(' #multiplicationOperator');
