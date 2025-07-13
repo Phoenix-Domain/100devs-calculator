@@ -1,29 +1,23 @@
+//DOM Variables
 const result = document.querySelector('#result');
 const clearBtn = document.querySelector('#clearBtn');
 const delBtn = document.querySelector('#delBtn');
 const toggleBar = document.querySelector('#toggleBar');
 const calculator = document.querySelector('#calculator');
 const toggle = document.querySelector('#toggle');
-
 const primaryBtns = document.querySelectorAll('.btn__primary');
+const equalOperator = document.querySelector('#equalOperator');
+const body = document.querySelector('body');
 
+let calc = "";
+
+
+//Event Listeners
 primaryBtns.forEach(x => {
   x.addEventListener('click', () => {
     displayBtnContent(x.textContent);
   })
-})
-
-function displayBtnContent(x){
-  calc = calc + `${x}`;
-  result.textContent = calc;
-}
-
-const equalOperator = document.querySelector('#equalOperator');
-
-const body = document.querySelector('body')
-
-let calc = "";
-
+});
 
 equalOperator.addEventListener('click', function(){
   calc = eval(calc);
@@ -54,3 +48,14 @@ toggleBar.addEventListener('click', () => {
      toggleBar.style.background = "rgba(160, 112, 8, 1)"
   }
 })
+
+
+//Functions
+function displayBtnContent(x){
+  calc = calc + `${x}`;
+  result.textContent = calc;
+}
+
+
+
+
