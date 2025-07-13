@@ -1,6 +1,7 @@
 :root{
   --body-bg-color:rgba(214, 156, 209, 1);
   --card-bg-color:rgba(48, 43, 49, 1);
+  --text-color:whitesmoke;
 }
 
 main{
@@ -33,7 +34,8 @@ body{
 
 button{
   border-radius: 50%;
-  border:1px solid white;
+  border:none;
+  background: var(--body-bg-color);
   font-size:2rem;
   padding:1rem;
   margin: 0 1rem;
