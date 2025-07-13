@@ -15,7 +15,13 @@ const toggleBar = document.querySelector('#toggleBar');
 const calculator = document.querySelector('#calculator');
 const toggle = document.querySelector('#toggle');
 
+const primaryBtns = document.querySelectorAll('.btn__primary');
 
+primaryBtns.forEach(x => {
+  x.addEventListener('click', () => {
+    
+  })
+})
 
 const additionOperator = document.querySelector('#additionOperator');
 const minusOperator = document.querySelector('#minusOperator');
