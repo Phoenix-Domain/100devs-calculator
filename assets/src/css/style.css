@@ -1,6 +1,7 @@
 :root{
   --body-bg-color:rgba(214, 156, 209, 1);
   --card-bg-color:rgba(48, 43, 49, 1);
+  --text-color-primary:#000;
   --text-color:whitesmoke;
 }
 
@@ -23,6 +24,7 @@ body{
 .result{
   background-color: whitesmoke;
   padding:0.8rem;
+  height:2rem;
   margin:1rem auto;
   display:flex;
   justify-content: flex-end;
