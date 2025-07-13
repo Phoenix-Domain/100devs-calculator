@@ -5,6 +5,7 @@ const delBtn = document.querySelector('#delBtn');
 const toggleBar = document.querySelector('#toggleBar');
 const calculator = document.querySelector('#calculator');
 const toggle = document.querySelector('#toggle');
+const btns = document.querySelectorAll('button');
 const primaryBtns = document.querySelectorAll('.btn__primary');
 const equalOperator = document.querySelector('#equalOperator');
 const body = document.querySelector('body');
@@ -38,14 +39,23 @@ toggleBar.addEventListener('click', () => {
   toggle.classList.toggle('nightMode');
   if(toggle.classList.contains('nightMode')){
     toggle.textContent = "🌙"
-    body.style.background = "rgb(36, 31, 37)";
-    calculator.style.background = "lightblue";
-    toggleBar.style.background = "rgb(36, 31, 37)"
+    body.style.background = "var(--card-bg-color)";
+    calculator.style.background = "var(--body-bg-color)";
+    toggleBar.style.background = "var(--card-bg-color)";
+    btns.forEach(x => {
+      x.style.background = "var(--card-bg-color)";
+      x.style.color = "var(--text-color)";
+    })
+    
   } else{
     toggle.textContent = '☀️'
-    body.style.background = "rgba(245, 169, 5, 1)";
-     calculator.style.background = "black";
-     toggleBar.style.background = "rgba(160, 112, 8, 1)"
+    body.style.background = "var(--body-bg-color)";
+     calculator.style.background = "var(--card-bg-color)";
+     toggleBar.style.background = "var(--body-bg-color)";
+     btns.forEach(x => {
+      x.style.background = "var(--body-bg-color)";
+      x.style.color = "var(--text-color-primary)";
+    })
   }
 })
 
