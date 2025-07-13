@@ -14,7 +14,7 @@ primaryBtns.forEach(x => {
 })
 
 function displayBtnContent(x){
-  calc = calc + "x";
+  calc = calc + `${x}`;
   result.textContent = calc;
 }
 
