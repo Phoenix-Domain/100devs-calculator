@@ -13,7 +13,9 @@ const clearBtn = document.querySelector('#clearBtn');
 const delBtn = document.querySelector('#delBtn');
 const toggleBar = document.querySelector('#toggleBar');
 const calculator = document.querySelector('#calculator');
-const toggle = document.querySelector('#toggle')
+const toggle = document.querySelector('#toggle');
+
+
 
 const additionOperator = document.querySelector('#additionOperator');
 const minusOperator = document.querySelector('#minusOperator');
