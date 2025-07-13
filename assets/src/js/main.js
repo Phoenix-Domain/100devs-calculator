@@ -19,7 +19,7 @@ const primaryBtns = document.querySelectorAll('.btn__primary');
 
 primaryBtns.forEach(x => {
   x.addEventListener('click', () => {
-    
+    displayBtnContent(x.textContent);
   })
 })
 
