@@ -14,9 +14,9 @@ let calc = "";
 
 
 //Event Listeners
-primaryBtns.forEach(x => {
-  x.addEventListener('click', () => {
-    displayBtnContent(x.textContent);
+primaryBtns.forEach(button => {
+     button.addEventListener('click', () => {
+     displayBtnContent(button.textContent);
   })
 });
 
@@ -52,20 +52,20 @@ toggleBar.addEventListener('click', () => {
     body.style.background = "var(--body-bg-color)";
      calculator.style.background = "var(--card-bg-color)";
      toggleBar.style.background = "var(--body-bg-color)";
-     btns.forEach(x => {
-      x.style.background = "var(--body-bg-color)";
-      x.style.color = "var(--text-color-primary)";
-    })
+
+     btns.forEach(button => {
+      button.style.background = "var(--body-bg-color)";
+      button.style.color = "var(--text-color-primary)";
+    });
+
   }
 })
 
 
 //Functions
 function displayBtnContent(x){
-  calc = calc + `${x}`;
-  result.textContent = calc;
+     calc = calc + `${x}`;
+     result.textContent = calc;
 }
-
-
 
 
